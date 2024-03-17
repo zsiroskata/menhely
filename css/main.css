@@ -52,6 +52,7 @@ h2{
 .egyesSzoveg{
     grid-column: 1/4;
     text-align: justify;
+    align-self: center;
 }
 .egyesKep{
     align-self: center;
@@ -71,12 +72,11 @@ h2{
 .kettes{
     display: grid;
     padding: 0 10%;
-
     grid-template-columns: repeat(2, 1fr);
 }
 
 .kettes ul li{  
-    margin: 30px;
+    margin: 30px 0;
 }
 
 .kettes .column{
@@ -98,13 +98,17 @@ h2{
 }
 .harmasKep{
     grid-column: 4/4;
+    margin: 0 0 10px 10px ;
+}
+img{
+    border-radius: 1%;
 }
 /* harmadik grid tartomány vége */
 
 
 footer{
     display: grid;
-    margin: 10px 0 0;
+    
     color: whitesmoke;
     grid-template-columns: repeat(3, 1fr);
     background-color: rgba(82, 107, 252, 0.801);
@@ -113,9 +117,12 @@ footer{
 footer h3{
     grid-column: 1/4 ;
     justify-self: center;
+    padding: 0;
+    margin:  10px 0 0;
 }
 
 footer .foot, p{
+    margin: 0;
     grid-column: 1/4 ;
     display: flex;
     justify-self: center;
@@ -125,6 +132,7 @@ footer a{
     color:rgb(230, 230, 230);
     text-decoration: underline;
 }
+
 
 
 /* responsive */
@@ -196,6 +204,16 @@ footer a{
     .columns{
         width: 100%;
     }
-}
+    .center{
+        margin: 10px auto;
+    }
+}   
 
+
+@media screen and (max-width: 625px) {
+    .map{
+        height: 500px;
+        width: 500px;
+    }
+}   
 
