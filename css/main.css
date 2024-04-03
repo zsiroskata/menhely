@@ -32,6 +32,7 @@ header p, a{
 
 #cat{
     max-width: 80px ;
+    padding: 10px;
 }
 
 .elso {
