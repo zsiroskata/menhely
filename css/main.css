@@ -220,3 +220,17 @@ footer a{
         width: 400px;
     }
 }   
+
+
+@media screen and (max-width: 420px) {
+    header .header-row p:hover {
+        background-color: rgba(10, 9, 10, 0.979);
+    }
+    header .header-row p:hover {
+        background-color: rgba(197, 163, 221, 0.616);
+    }
+    .map{
+        height: 300px;
+        width: 300px;
+    }
+}   
